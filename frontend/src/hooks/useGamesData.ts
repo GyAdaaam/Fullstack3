@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import GamesServices from "../services/GamesServices";
+import GamesServices from "../services/gamesServices";
 import { countries, Country } from "../constants/countries";
 
 export interface Game {
