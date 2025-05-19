@@ -1,0 +1,369 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "webshop (tesztek)",
+    "dateExported": "2024-04-16T15:52:03.965Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a5a6334f-385f-4352-99e7-4eb1e848aa0e",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Játéklista (selectGames)",
+            "url": "http://localhost:8080/games",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-04-15T11:58:28.494Z",
+            "modified": "2024-04-15T11:58:28.494Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "eeec9a24-2682-42b4-b911-bce541824879",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Játék információk (selectGameById)",
+            "url": "http://localhost:8080/games/1000",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2024-04-15T11:58:28.498Z",
+            "modified": "2024-04-15T11:58:28.498Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "592ffe48-f5e7-4890-a5e4-3e51b28c5b31",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes műfaj (getGenres)",
+            "url": "http://localhost:8080/games/genres",
+            "method": "GET",
+            "sortNum": 8750,
+            "created": "2024-04-15T11:58:28.501Z",
+            "modified": "2024-04-15T11:58:28.501Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ab0b5644-0458-41d4-bcbc-e674148377c4",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes platform (getPlatforms)",
+            "url": "http://localhost:8080/games/platforms",
+            "method": "GET",
+            "sortNum": 9062.5,
+            "created": "2024-04-15T11:58:28.503Z",
+            "modified": "2024-04-15T11:58:28.503Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0b3b0014-4231-4722-a5ee-18563a5060b1",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes kategória (getCategories)",
+            "url": "http://localhost:8080/games/categories",
+            "method": "GET",
+            "sortNum": 9375,
+            "created": "2024-04-15T11:58:28.502Z",
+            "modified": "2024-04-15T11:58:28.502Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e32aa4f7-e36f-41ef-a215-9e464734d1bb",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Játéklista oldalszám (selectGamesPerPage)",
+            "url": "http://localhost:8080/games/page/20",
+            "method": "GET",
+            "sortNum": 9687.5,
+            "created": "2024-04-15T11:58:28.497Z",
+            "modified": "2024-04-15T11:58:28.497Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e704dfed-9581-492b-ad69-2ad6eccab355",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes oldal (getTotalPages)",
+            "url": "http://localhost:8080/games/totalpages",
+            "method": "GET",
+            "sortNum": 9843.8,
+            "created": "2024-04-15T11:58:28.500Z",
+            "modified": "2024-04-15T11:58:28.500Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8268dd61-6f63-4587-a009-7ab45c85908d",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Globális kereső (searchGames)",
+            "url": "http://localhost:8080/games/search/Counter-Strike",
+            "method": "GET",
+            "sortNum": 9882.8,
+            "created": "2024-04-15T11:58:28.495Z",
+            "modified": "2024-04-15T11:58:28.495Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "704c9407-faa1-4c1f-a175-95d6857ab0b7",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Részletes kereső (selectGamesWhere)",
+            "url": "http://localhost:8080/games/filter",
+            "method": "POST",
+            "sortNum": 9921.9,
+            "created": "2024-04-15T11:58:28.496Z",
+            "modified": "2024-04-15T11:58:28.496Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"game_name\": \"Counter-Strike: Source\",\n    \"min_price\": 5,\n    \"max_price\": 10,\n    \"genre_name\": \"Akció\",\n    \"category_name\": \"Többjátékos\",\n    \"platform_name\": \"Linux\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89ffbc08-aa2f-4ab7-99eb-61ea6872244a",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Regisztráció (registerUser)",
+            "url": "http://localhost:8080/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-15T11:58:28.492Z",
+            "modified": "2024-04-15T11:58:28.492Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"feltolto\",\n  \"email\" : \"feltolto@gmail.com\",\n  \"password\" : \"felto\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "76e70a04-d787-4029-ac9b-1f65978e37f9",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Fehasználói információk (selectUserByEmail)",
+            "url": "http://localhost:8080/auth/userprofile",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-04-15T11:58:28.499Z",
+            "modified": "2024-04-16T09:33:27.695Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJlbmRzemVyZ2F6ZGFAZ21haWwuY29tIiwicm9sZSI6MSwidXNlcklkIjo0NSwiaWF0IjoxNzEzMjU5OTk3LCJleHAiOjE3MTMyNjE3OTd9.LZ9NSQxHWf40x9dAmVso_8xCHURuV29DMPxFEHNeIVY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4d1801c7-cee2-463b-8106-0d0aea503574",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Bejelentkezés (loginUser)",
+            "url": "http://localhost:8080/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-15T11:58:28.493Z",
+            "modified": "2024-04-15T11:58:28.493Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"rendszergazda@gmail.com\",\n  \"password\": \"rendszergazda\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2061f28-e0a0-42e4-8081-e20c6fed0baa",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes fizetési mód (getPaymentMethods)",
+            "url": "http://localhost:8080/orders/paymentmethods",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-15T11:58:28.504Z",
+            "modified": "2024-04-15T11:58:28.504Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "58113479-a7a1-4675-b5b1-4abdae79264a",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Rendelés leadása (InsertOrder)",
+            "url": "http://localhost:8080/orders/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-15T11:58:28.506Z",
+            "modified": "2024-04-16T12:18:03.065Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOjIsInVzZXJJZCI6NDYsImlhdCI6MTcxMzI2OTcxNywiZXhwIjoxNzEzMjcxNTE3fQ.tVR-powA6vzwC-jI1UYopg12JiLiM1cu9yGE-OAB2vs",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"payment\": {\n    \"payment_method_id\": 4\n  },\n  \"items\": [\n    {\n      \"game_id\": 120,\n      \"quantity\": 2\n    },\n    {\n      \"game_id\": 200,\n      \"quantity\": 2\n    }\n  ],\n  \"full_name\": \"Teszt Felhasználó\",\n  \"phone_number\": \"+1234567890\",\n  \"address\": \"123 Teszt Utca\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91995738-a2c2-483d-b71f-b29605405adf",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Rendelés információk",
+            "url": "http://localhost:8080/orders/43",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-15T11:58:28.507Z",
+            "modified": "2024-04-15T11:58:28.507Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3p0MkBnbWFpbC5jb20iLCJyb2xlIjo1LCJ1c2VySWQiOjM3LCJpYXQiOjE3MTI5MDA0MTIsImV4cCI6MTcxMjkwMjIxMn0.lfwlSifnw2sNzC_tj0Jg5rH2XYcvNGDP9tF--RIAnLQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1afafec-da34-46ae-97d4-22c153015062",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Fizetési állapot módosítás ((updateOrderPaymentStatus és updateOrderStatus))",
+            "url": "http://localhost:8080/orders/payorder/29",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2024-04-15T11:58:28.508Z",
+            "modified": "2024-04-15T11:58:28.508Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bc86379a-74a7-45b8-9e3d-1e4102e5c9c9",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Jelszó módosítás (updatePassword)",
+            "url": "http://localhost:8080/auth/changepassword",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2024-04-15T11:58:28.509Z",
+            "modified": "2024-04-15T11:58:28.509Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3p0MkBnbWFpbC5jb20iLCJyb2xlIjo1LCJ1c2VySWQiOjM3LCJpYXQiOjE3MTI5MDA0MTIsImV4cCI6MTcxMjkwMjIxMn0.lfwlSifnw2sNzC_tj0Jg5rH2XYcvNGDP9tF--RIAnLQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"newPassword\":\"teszt2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "83e8e573-c573-48bd-885a-36ebf1c568fb",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Felhasználónév módosítás (updateUsername)",
+            "url": "http://localhost:8080/auth/changeusername",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2024-04-15T11:58:28.510Z",
+            "modified": "2024-04-15T11:58:28.510Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"newUsername\":\"teszt\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d46cfde-21dd-4b72-b74e-64d723d1c489",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Felhasználohoz tartozó összes rendelés (getAllUserOrders)",
+            "url": "http://localhost:8080/orders/userorders",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-04-15T11:58:28.511Z",
+            "modified": "2024-04-15T11:58:28.511Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c3fa5ee-c04f-443b-a19f-a25132c4fca4",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes fejlesztő (getDevelopers)",
+            "url": "http://localhost:8080/games/developers",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-04-15T11:58:28.512Z",
+            "modified": "2024-04-15T11:58:28.512Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "92f2e5fd-cb62-4fb9-acda-3dc40be1cf13",
+            "colId": "eb533e34-dbe5-4390-9c13-5cb22c2caf61",
+            "containerId": "",
+            "name": "Összes kiadó (getPublishers)",
+            "url": "http://localhost:8080/games/publishers",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-04-15T11:58:28.513Z",
+            "modified": "2024-04-15T11:58:28.513Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

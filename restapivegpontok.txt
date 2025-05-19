@@ -1,0 +1,64 @@
+games.js
+
+http://localhost:8080/games 
+Az összes játék le kéréséhez szolgáló végpont. 
+ 
+http://localhost:8080/games/platforms
+Az összes játékhoz tartozó, egyedi platform lekérésére szolgáló végpont. 
+ 
+http://localhost:8080/games/genres
+Az összes játékhoz tartozó, egyedi platformok lekérésére szolgáló végpont.
+ 
+http://localhost:8080/games/categories
+Az összes játékhoz tartozó, egyedi kategóriák lekérésére szolgáló végpont. 
+ 
+http://localhost:8080/games/:id
+Egy adott játékhoz tartozó részletes információ lekérésére szolgáló végpont. 
+ 
+http://localhost:8080/games/filter
+A játékok között részletes szűrésre szolgáló végpont. 
+ 
+http://localhost:8080/games/publishers
+Az összes játékhoz tartozó, egyedi kiadók lekérésére szolgáló végpont.
+ 
+http://localhost:8080/games/developers
+Az összes játékhoz tartozó, egyedi fejlesztők lekérésére szolgáló végpont.
+ 
+http://localhost:8080/games/search/ 
+A globális játékok között történő kereséséhez szolgáló végpont.
+
+http://localhost:8080/games/totalpages/
+Az összes oldalszám lekérésére szolgáló végpont.
+
+http://localhost:8080/games/page/
+Az adott oldalon lévő játékok lekéréséhez szolgáló végpont.
+
+auth.js
+
+http://localhost:8080/auth/register
+A regisztrációt végző végpont.
+
+http://localhost:8080/auth/login
+A bejelentkezést végző végpont.
+
+http://localhost:8080/auth/changeusername
+A felhasználónév változtatást végző végpont.
+
+http://localhost:8080/auth/changepassword
+A jelszó változtatást végző végpont.
+
+orders.js
+http://localhost:8080/orders
+A rendelés leadását végző végpont.
+
+http://localhost:8080/orders/userorders
+A felhasználóhoz tartozó rendelések lekérése.
+
+http://localhost:8080/orders/payorder/
+A fizetési módosítást végző végpont.
+
+http://localhost:8080/orders/
+Egy adott rendelés információja.
+
+http://localhost:8080/orders/paymentmethods
+Az összes fizetési mód lekérése.
