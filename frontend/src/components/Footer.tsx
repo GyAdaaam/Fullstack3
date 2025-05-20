@@ -75,6 +75,12 @@ export default function Footer() {
           <p className="text-center text-sm text-white">
             &copy; {currentYear} LevelUpDeals Minden jog fenntartva.
           </p>
+          <p className="text-center text-xs text-gray-400 mt-2 px-4">
+            Jogi nyilatkozat:  
+            Az ezen az oldalon megjelenő játékokhoz tartozó képek, logók és egyéb vizuális elemek a megfelelő jogtulajdonosok tulajdonát képezik.  
+            Az oldal kizárólag nem kereskedelmi, bemutató célokat szolgál, portfólió részeként készült.  
+            Ez az oldal nem áll kapcsolatban a Valve Corporation-nel vagy a játékok kiadóival, és nem képviseli azokat.
+          </p>
         </div>
       </div>
     </footer>
